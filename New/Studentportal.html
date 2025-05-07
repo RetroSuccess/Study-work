@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .container {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 770px;
+            padding: 8px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: grey;
+        }
+
+        h1{
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h3 style="color: white;">Student Info Portal</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <h1 align="left">Welcome to our portal</h1>
+
+    <div class="container">
+        <h2 align="left">Student Information Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>21</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>22</td>
+                <td>Data Science</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2 align="left">Add a New Student</h2>
+        <form>
+            <label for="name">Name: <input type="text" id="name" required></label><br><br>
+            <label for="age">Age: <input type="number" id="age" required></label><br><br>
+            <label for="course">Course: <input type="text" id="course" required></label><br><br>
+            <button type="submit">Submit</button><br>
+        </form>
+    </div>
+
+    <p align="center">Visit our <a href="https://www.richfield.ac.za/">College Website</a></p>
+</body>
+</html>

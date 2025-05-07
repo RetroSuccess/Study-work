@@ -1,0 +1,47 @@
+p {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    border-style: solid;
+    border-color: gold;
+    padding: 50px;
+    margin: 0px;
+
+}
+
+.bsc{
+    background-color: red;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:gold;
+    text-align: center;
+}
+
+body{
+    background-color: white;
+}
+
+ul{
+    list-style-type: square;
+}
+
+img{
+    border-style: solid;
+    border-color: gold;
+    width: 100px;
+    height: 100px;
+}
+
+table, th, td{
+    background-color: white;
+    border-collapse: collapse;
+    font-weight: bold;
+    width: 250px;
+    border-color: black;
+    padding: 3px;
+}
+
+.Tommy{
+    background-color: blue;
+    color: white;
+}

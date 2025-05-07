@@ -1,0 +1,86 @@
+nav {
+    background-color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    padding: 50px;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 40px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    color: lightgray;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#Center {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+}
+
+table, th, td {
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+.Tommy {
+    background-color: gray;
+}
+
+.Networks {
+    background-color: green;
+    color: white;
+}
+
+.INS {
+    background-color: orange;
+}
+
+.math {
+    background-color: peachpuff;
+}
+
+.Web {
+    background-color: lightblue;
+}
+
+.Prog {
+    background-color: brown;
+    color: white;
+}
+
+#none{
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}

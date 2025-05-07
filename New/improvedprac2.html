@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richfield University</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            border-style: double;
+        }
+        .bsc{
+            border-style: solid;
+            border-radius: 10px;
+            text-shadow: 3px 3px 5px black;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        }
+        marquee {
+            font-size: 2em;
+            font-weight: bold;
+            color: yellow;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.02);
+            transition: 0.8s;
+        }
+        ul, ol {
+            text-align: left;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        fieldset {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: #ff7e5f;
+            color: white;
+            cursor: grab;
+            font-size: 1.1em;
+        }
+        button:hover {
+            background: #feb47b;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bsc">Welcome to Richfield University</h1>
+    <p>Richfield is a private higher education institution in South Africa offering IT, business, and management programs.</p>
+    
+    <marquee behavior="alternate">Explore Your Future With Us!</marquee>
+    
+    <h2 class="bsc">MIT Faculty</h2>
+    <h3 class="bsc">Qualifications</h3>
+    <h4 class="bsc">BSc IT</h4>
+    
+    <h5 class="bsc">First Semester Modules</h5>
+    <ul>
+        <li>Web Technology 511</li>
+        <li>Networks 511</li>
+        <li>Mathematics 511</li>
+        <li>Information Systems 511</li>
+        <li>Programming 511</li>
+    </ul>
+    
+    <h5 class="bsc">Second Semester Modules</h5>
+    <ol>
+        <li>Web Technology 512</li>
+        <li>Networks 512</li>
+        <li>Mathematics 512</li>
+        <li>Information Systems 512</li>
+        <li>Programming 512</li>
+    </ol>
+    
+    <h3 class="bsc">Apply to Study with Richfield</h3>
+    <form>
+        <fieldset>
+            <legend>Application Form</legend>
+            <label>Enter your name: <input type="text" placeholder="Your Name" required></label><br>
+            <label>Enter your email: <input type="email" placeholder="example@gmail.com" required></label><br>
+            <label>Confirm password: <input type="password" placeholder="********"></label><br>
+            <label>Enter number: <input type="number" placeholder="0"></label><br>
+            <label>Enter date: <input type="date"></label><br>
+            <label>Select Qualification:</label>
+            <select>
+                <option>Select Qualification</option>
+                <option>BSc IT</option>
+                <option>DIT</option>
+                <option>HCIT</option>
+            </select><br>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    
+    <h3 class="bsc">BSc IT Timetable</h3>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>08:00 - 10:00</td>
+            <td>Web Technology</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>10:00 - 12:00</td>
+            <td>Networks</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>12:00 - 14:00</td>
+            <td>Mathematics</td>
+        </tr>
+    </table>
+    
+    <h4 class="bsc">Other Qualifications</h4>
+    <h4 class="bsc">DIT</h4>
+    <h4 class="bsc">HCIT</h4>
+</body>
+</html>

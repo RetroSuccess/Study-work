@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillet Band</title>
+    <style>
+        /* Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .content {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content img,
+        .content video,
+        .content audio {
+            display: block;
+            margin: 0 auto 20px;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 250px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Skillet Band</h1>
+        <p>Singer from rock band called "Skillet"</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Discography</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Media Section -->
+        <div class="content">
+            <img src="skillet.jpg" alt="Skillet Band">
+            <video width="400" height="300" controls>
+                <source src="skillet_the_resistance_official_lyric_video_h264_27207.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="skillet_the_resistance_official_lyric_video_mp3_27226.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- About -->
+        <div class="content">
+            <h2>About Skillet</h2>
+            <p>Skillet is an American Christian rock band formed in 1996 in Memphis, Tennessee. They are known for mixing symphonic rock, industrial, and alternative metal. Their dynamic live shows and inspirational lyrics have earned them a diverse fanbase worldwide.</p>
+        </div>
+
+        <!-- Band Members -->
+        <div class="content">
+            <h2>Band Members</h2>
+            <ul>
+                <li><strong>John Cooper</strong> – Lead vocals, bass</li>
+                <li><strong>Korey Cooper</strong> – Guitar, keys, backing vocals</li>
+                <li><strong>Jen Ledger</strong> – Drums, vocals</li>
+                <li><strong>Seth Morrison</strong> – Lead guitar</li>
+            </ul>
+        </div>
+
+        <!-- Discography -->
+        <div class="content">
+            <h2>Discography Highlights</h2>
+            <ul>
+                <li><strong>Collide</strong> (2003)</li>
+                <li><strong>Comatose</strong> (2006)</li>
+                <li><strong>Awake</strong> (2009)</li>
+                <li><strong>Rise</strong> (2013)</li>
+                <li><strong>Unleashed</strong> (2016)</li>
+                <li><strong>Dominion</strong> (2022)</li>
+            </ul>
+        </div>
+
+        <!-- Fun Facts -->
+        <div class="content">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Skillet has sold over 12 million albums worldwide.</li>
+                <li>“Monster” has over 3 billion global audio streams.</li>
+                <li>They’ve performed in over 25 countries.</li>
+            </ul>
+        </div>
+
+        <!-- Tour Schedule -->
+        <div class="content">
+            <h2>Tour Schedule 2025</h2>
+            <ul>
+                <li><strong>April 10</strong> – New York, NY</li>
+                <li><strong>April 15</strong> – Toronto, Canada</li>
+                <li><strong>May 2</strong> – Berlin, Germany</li>
+                <li><strong>May 10</strong> – London, UK</li>
+                <li><strong>June 1</strong> – Sydney, Australia</li>
+            </ul>
+        </div>
+
+        <!-- Fan Gallery -->
+        <div class="content gallery">
+            <h2>Fan Gallery</h2>
+            <img src="fan1.jpg" alt="Fan with Skillet shirt">
+            <img src="concert1.jpg" alt="Live concert">
+            <img src="meetngreet.jpg" alt="Meet and Greet">
+        </div>
+
+        <!-- Contact Form -->
+        <div class="content">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Skillet Band. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

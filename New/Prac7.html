@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Lecturer Jemina - Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        img {
+            display: block;
+            margin: 5px auto;
+            border: 5px solid darkorange;
+            border-radius: 12px;
+            box-shadow: 4px 6px 12px;
+            height: 400px;
+            width: 20%;
+        }
+        .summary {
+            background-color: #fff;
+            padding: 20px;
+            border-left: 5px solid darkorange;
+            box-shadow: 2px 2px 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        div{
+            text-align: center;
+        }
+        li{
+            list-style: none;
+        }
+        legend{
+            text-decoration:line-through;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <fieldset style="border: 5px solid black;">
+            <legend align="center"><span style="font-size: 40px;"><b>Profile</b></span></legend>
+    <h1>Jemina Profile</h1>
+
+    <img src="https://3.files.edl.io/8255/24/08/05/131535-8c0ec40b-4803-4c99-8d58-581c65b832c7.jpg" alt="Picture of Jemina the IT lecturer">
+
+        <h2>Qualifications</h2>
+        <ul>
+            <li><strong>PhD in Information Technology</strong></li>
+            <li><strong>Master of Science in Computer Science (Cum Laude)</strong></li>
+            <li><strong>Bachelor of Information Technology (Honours)</strong></li>
+            <li><strong>Postgraduate Certificate in Higher Education (PGCHE)</strong></li>
+            <li><strong>Certified Information Systems Security Professional (CISSP)</strong></li>
+            <li><strong>Advanced Certificate in Data Analytics</strong></li>
+        </ul>
+
+        <h2>Summary</h2>
+        <div class="summary">
+            Jemina is a dedicated and knowledgeable IT lecturer with over 10 years of academic and industry experience. With a strong foundation in cybersecurity, software development, and cloud computing, she is passionate about equipping students with the technical skills and critical thinking required in today’s digital world. Jemina holds a PhD in Information Technology and has earned multiple certifications, including CISSP and Microsoft Azure Solutions Architect. Known for her engaging teaching style and innovative use of technology in education, she also actively contributes to research in machine learning and data analytics. Jemina is committed to bridging the gap between theory and real-world application, fostering future-ready IT professionals.
+        </div>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Python – for scripting, data analysis, AI/ML</li>
+            <li>Java – widely used in education, OOP principles</li>
+            <li>C++ / C# – systems programming and application development</li>
+            <li>JavaScript – for web development and front-end logic</li>
+            <li>SQL – for database design and management</li>
+            <li>HTML/CSS – web development fundamentals</li>
+        </ul>
+    </fieldset>
+    </form>
+    </div>
+
+    <script>
+       alert("Hello");
+       let module = prompt("Please enter the module: ");
+       if(module === "Webtech"){
+        alert(`You are a fist year student`);
+        document.write(`<h3>Welcome to Webtech as a first year student!</h3>`)
+       } 
+       else if(module === "Programming 621"){
+        alert(`You are a second year student!`)
+        document.write(`<h3>Welcome to Programming as a second year student!</h3>`)
+       }
+       else if(module === "Programming 351") {
+        alert(`You are a third year student!`)
+        document.write(`<h3>Welcome to Programming as a third year student!</h3>`)
+       }
+       else {
+        alert(`Module not recognised!`)
+       }
+
+        let age = prompt("Enter your age: ");
+        age = parseInt(age); // convert input to a number
+        if (age >= 18) {
+        alert(`You are ${age}`);
+        } else {
+        alert("You are under 18");
+        }
+
+    </script>
+</body>
+</html>
