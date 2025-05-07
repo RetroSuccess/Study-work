@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #myModal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    .close {
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+<h1 align="center">Custom color</h1><br><br>
+
+<!-- Trigger button -->
+<button onclick="openModal()">Open Box</button>
+
+<!-- The Modal -->
+<div id="myModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>This is a simple modal box.</p>
+
+    <!-- Dropdown -->
+    <select id="valueSelect" onchange="addTotal()">
+      <option value="">--Select one--</option>
+      <option value="100">100</option>
+      <option value="200">200</option>
+      <option value="300">300</option>
+    </select><br>
+
+    <!-- Checkboxes -->
+    <label><input type="checkbox" value="55" onchange="toggleCheckbox(this)"> Green</label><br>
+    <label><input type="checkbox" value="22" onchange="toggleCheckbox(this)"> Blue</label><br>
+    <label><input type="checkbox" value="100" onchange="toggleCheckbox(this)"> Custom color</label><br>
+
+    <!-- Close button inside modal -->
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<!-- Display total -->
+<p align="center" id="Totalvalue">500</p>
+
+<script>
+  function openModal() {
+    document.getElementById('myModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
+
+  function addTotal() {
+    let select = document.getElementById('valueSelect');
+    let selectedValue = Number(select.value);
+    if (!selectedValue) return;
+
+    let totalDisplay = document.getElementById('Totalvalue');
+    let currentTotal = Number(totalDisplay.textContent);
+
+    totalDisplay.textContent = currentTotal + selectedValue;
+
+    select.value = ""; // reset dropdown
+  }
+
+  function toggleCheckbox(checkbox) {
+    let value = Number(checkbox.value);
+    let totalDisplay = document.getElementById('Totalvalue');
+    let currentTotal = Number(totalDisplay.textContent);
+
+    if (checkbox.checked) {
+      totalDisplay.textContent = currentTotal + value;
+    } else {
+      totalDisplay.textContent = currentTotal - value;
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
+
